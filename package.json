@@ -5,13 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev":"npm start"
   },
   "author": "Rudra",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "file-uri-to-path": "^2.0.0",
     "moment": "^2.30.1",
     "mongoose": "^8.0.4",
     "nodemon": "^3.1.0",
