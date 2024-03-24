@@ -1,0 +1,23 @@
+{
+  "name": "myhotel",
+  "version": "1.0.0",
+  "description": "Hotel Booking",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rudra",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "moment": "^2.30.1",
+    "mongoose": "^8.0.4",
+    "nodemon": "^3.1.0",
+    "path": "^0.12.7",
+    "router": "^1.3.8",
+    "stripe": "^14.20.0",
+    "uuid": "^9.0.1"
+  }
+}

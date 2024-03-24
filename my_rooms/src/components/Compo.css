@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Concert+One&display=swap");
+
+.navBar {
+  background-color: black;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  font-family: "Caudex", serif;
+  position: fixed;
+  top: 0;
+  margin-bottom: 200px;
+  z-index: 1;
+}
+
+.logo {
+  margin-left: 30px;
+  font: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+.logo h1 a{
+  text-decoration: none;
+  color: white;
+}
+.logo:hover {
+  color: rgb(169, 167, 165);
+}
+
+.navButtonsDiv {
+  margin-right: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navBtn {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0px 2px 0px 7px;
+  padding: 5px;
+  width: 80px;
+  height: 35px;
+  font-size: medium;
+  font-weight: 550;
+}
+
+.navBtn:hover {
+  background-color: rgb(169, 167, 165);
+}
+
+.home_container {
+  width: 100%;
+  height: 100%;
+}
+.dateContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+.dateBox {
+  /* z-index: -1; */
+  width: 400px;
+}
+
+.serachFilter input{
+  width: 280px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.selectDiv select{
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.home_box {
+  /* position: fixed; */
+  width: 100%;
+  height: 350px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full_room {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.room_container {
+  /* background-color: blue; */
+  /* position: fixed; */
+  width: 90%;
+  height: 90%;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  margin-top: 140px;
+}
+
+.room_img {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.small_img {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.room_content {
+  width: 60%;
+  height: 100%;
+
+  text-align: left;
+  margin-top: 10px;
+}
+.room_details {
+  width: 100%;
+  height: 70%;
+}
+.room_content h1 {
+  font-size: 20px;
+}
+.room_btn {
+  width: 100%;
+  height: 30%;
+  float: right;
+  margin-right: 30px;
+}
+
+.btn {
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0px 2px 0px 7px;
+  padding: 5px;
+  width: 110px;
+  height: 42px;
+  font-size: medium;
+  font-weight: 550;
+  float: right;
+  top: 0;
+}
+/* .modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal_content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+  } */
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.userDiv {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-top: 23px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.dropDownDiv {
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  color: black;
+  z-index: 2;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.navButtonsDivExtra{
+  flex-direction: column;
+  margin-right: 10px;
+}
+.dropDownEle {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  text-align: left;
+}
+@media (max-width: 570px) {
+  .logo {
+    font-size: xx-small;
+    width: 15%;
+  }
+
+  .navButtonsDiv {
+    margin-right: 4px;
+  }
+
+  .navBtn {
+    width: 75px;
+    height: 30px;
+    padding: 2px;
+    margin: 3px;
+    font-size: small;
+    text-align: center;
+    float: right;
+  }
+  .home_container {
+    height: 100%;
+  }
+
+  .home_box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .room_container {
+    display: block;
+    margin-top: 90px;
+    height: 560px;
+  }
+
+  .room_img {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+  }
+
+  .room_content {
+    width: 100%;
+    height: 50%;
+    margin-left: 20px;
+  }
+  .room_content h1 {
+    font-size: 20px;
+    text-wrap: wrap;
+  }
+  .dateContainer{
+    flex-direction: column;
+  }
+  .selectDiv select{
+    width: 280px;
+  }
+}

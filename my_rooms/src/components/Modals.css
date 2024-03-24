@@ -1,0 +1,150 @@
+.modalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Set maximum width if necessary */
+  height: 100%; /* Allow height to adjust based on content */
+ margin-top: 70px;
+  z-index: 1000; /* Ensure modal is above other elements */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  padding: 20px; /* Add padding for better appearance */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.modalBox {
+  height: 90%;
+ 
+  background-color: white; /* Set background color for modal content */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding for better appearance */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+.big_imgModal {
+  width: 100%; /* Ensure image fills the modal width */
+  height: auto; /* Allow height to adjust based on image aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+.roomDescription {
+  color: #333; /* Set text color */
+  margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+.buttonContainer {
+  text-align: center; /* Align buttons to the center */
+}
+
+.buttonContainer button {
+  padding: 10px 20px; /* Add padding for better appearance */
+  margin: 0 10px; /* Add margin between buttons */
+  border: none; /* Remove default button border */
+  background-color: #007bff; /* Set button background color */
+  color: white; /* Set button text color */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.buttonContainer button:hover {
+  background-color: #000; /* Darker background color on hover */
+}
+
+.bookButton{
+    float: right;
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* Booking Page styling */
+
+.bookingContainer {
+  width: 100%;
+ 
+  height: auto;
+ 
+}
+
+.bookingBox {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bigImg {
+  height: 400px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.detailSection {
+  width: 100%;
+  text-align: right;
+  margin-right: 20px;
+}
+.payButton {
+  float: right;
+  width: 100px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+.payButton:hover{
+    color: gray;
+}
+/* responsive */
+
+@media only screen and (max-width: 900px) {
+  .bookingContainer {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .bookingBox {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: none;
+    box-shadow: none;
+    margin-top: 65px;
+    height: auto;
+  }
+  .imgSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bigImg {
+    height: 400px;
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 90%;
+  }
+  .detailSection {
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .payButton {
+    float: left;
+    margin-top: 10px;
+    
+  }
+  .payButtondiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
