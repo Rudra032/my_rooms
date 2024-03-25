@@ -20,7 +20,7 @@ const HomePage = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const data = (await axios.get(`${window.location.origin}/api/mern_rooms/getallrooms`)).data;
+        const data = (await axios.get(`/api/mern_rooms/getallrooms`)).data;
         setRooms(data);
         setDuplicateRooms(data);
         setLoading(false);
