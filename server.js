@@ -5,7 +5,7 @@ import userRouter from "./routes/userRouter.js";
 import bookingsRouter from "./routes/bookingsRouter.js";
 import { fileURLToPath } from "url";
 import path from "path";
-import { fileURLToPath } from "url";
+// import { fileURLToPath } from "url";
 import { dirname } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
