@@ -14,6 +14,7 @@ console.log(__dirname);
 
 dotenv.config({ path: 'dotenv' })
 app.use(express.json());
+dotenv.config();
 const port = process.env.PORT || 5000;
 // console.log(process.env.PORT);
 

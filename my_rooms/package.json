@@ -50,5 +50,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://mern-hotelbackend.onrender.com/"
+  "proxy": "http://localhost:5000/"
 }
