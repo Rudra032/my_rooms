@@ -5,6 +5,7 @@ import userRouter from "./routes/userRouter.js";
 import bookingsRouter from "./routes/bookingsRouter.js";
 import { fileURLToPath } from "url";
 import path from "path";
+import dotenv from 'dotenv';
 // import { fileURLToPath } from "url";
 import { dirname } from "path";
 
@@ -13,6 +14,7 @@ const __dirname = dirname(__filename);
 
 const app = express();
 app.use(express.json());
+dotenv.config();
 const port = process.env.PORT || 5000;
 
 app.use(express.static(path.join(__dirname, "./my_rooms/build")));
