@@ -2,7 +2,7 @@
   "name": "myhotel",
   "version": "1.0.0",
   "description": "Hotel Booking",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
