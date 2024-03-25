@@ -34,7 +34,7 @@ function AdminAddRoom() {
     setError("");
     setLoading(true);
     try {
-      const data = (await axios.post(`${window.location.origin}/api/rooms/addroom`, values)).data;
+      const data = (await axios.post(`/api/rooms/addroom`, values)).data;
       Swal.fire("Congratulations", "Your Room Added Successfully", "success");
       form.resetFields();
     } catch (error) {

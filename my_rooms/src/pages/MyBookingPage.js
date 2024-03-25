@@ -19,7 +19,7 @@ function MyBookingPage() {
     setLoading(true);
     try {
       const rooms = (
-        await axios.post(`${window.location.origin}/api/bookings/getbookingbyuserid`, {
+        await axios.post(`/api/bookings/getbookingbyuserid`, {
           userid: user._id,
         })
       ).data;
@@ -40,7 +40,7 @@ function MyBookingPage() {
     setError("");
     setLoading(true);
     try {
-      await axios.post(`${window.location.origin}/api/bookings/cancelbooking`, {
+      await axios.post(`/api/bookings/cancelbooking`, {
         bookingid,
         roomid,
       });

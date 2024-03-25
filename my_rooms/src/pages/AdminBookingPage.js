@@ -40,7 +40,7 @@ function AdminBookingPage() {
     setError("");
     setLoading(true);
     try {
-      const data = (await axios.post(`${window.location.origin}/api/bookings/getallbookings`)).data;
+      const data = (await axios.post(`/api/bookings/getallbookings`)).data;
       setBookings(data);
     } catch (error) {
       console.log(error);

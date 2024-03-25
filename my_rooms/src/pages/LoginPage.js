@@ -21,7 +21,7 @@ const LoginPage = () => {
       password,
     };
     try {
-      const result = (await axios.post(`${window.location.origin}/api/users/login`, user)).data;
+      const result = (await axios.post(`/api/users/login`, user)).data;
       console.log(result);
       localStorage.setItem("currentUser", JSON.stringify(result));
       window.location.href = "/home";

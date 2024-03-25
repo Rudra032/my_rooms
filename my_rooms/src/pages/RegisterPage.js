@@ -26,7 +26,7 @@ const RegisterPage = () => {
         cpassword,
       };
       try {
-        const result = (await axios.post(`${window.location.origin}/api/users/register`, user)).data;
+        const result = (await axios.post(`/api/users/register`, user)).data;
         setSuccess(result);
         setName("");
         setEmail("");

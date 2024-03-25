@@ -31,7 +31,7 @@ function AdminRoomPage() {
     // setError("");
     setLoading(true);
     try {
-      const data = (await axios.post(`${window.location.origin}/api/mern_rooms/getallrooms`)).data;
+      const data = (await axios.post(`/api/mern_rooms/getallrooms`)).data;
       console.log(data)
       setRooms(data);
     } catch (error) {

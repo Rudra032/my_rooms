@@ -32,7 +32,7 @@ console.log(fromDateMoment)
       if (formattedDate >= currentDate) {
         try {
           setLoading(true);
-          const response = await axios.post(`${window.location.origin}/api/mern_rooms/getroombyid`, {
+          const response = await axios.post(`/api/mern_rooms/getroombyid`, {
             roomid,
           });
           setTotalAmount(response.data.rentperday * totalDays);
@@ -74,7 +74,7 @@ console.log(fromDateMoment)
 
     try {
       setLoading(true);
-      const result = await axios.post(`${window.location.origin}/api/bookings/bookroom`, bookingDetails);
+      const result = await axios.post(`/api/bookings/bookroom`, bookingDetails);
       setLoading(false);
       Swal.fire("Congratulations", "Your Room Booked Successfully", "success");
     } catch (error) {
